@@ -20,7 +20,8 @@ li a.nav-link{
     display: block;
 }
 h1{
-    font-size: 300%;
+    margin-bottom: 20px;
+    font-size: 2em;
     font-weight: bold;
 }
 h2{
@@ -119,7 +120,7 @@ p{
 .itens-hab{
     width: 50%;
     float: left;
-    
+    text-align: center;
 }
 .itens-hab p{
     padding-right: 20%;
@@ -147,6 +148,7 @@ p{
 .col img{
     width: 50%;
     margin: auto;
+    height: auto;
 }
 .postgres img {
     width: 20%;
@@ -155,6 +157,7 @@ p{
     width: 100%;
     height: 410px;
     text-align: left;
+    padding: 20px 0;
 }
 .contato{
     width: 100%;
@@ -164,8 +167,19 @@ p{
     float: left;
 }
 .social {
-    padding-left: 0px;
-    float: right;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social a {
+    color: #333;
+    text-decoration: none;
+}
+
+.fa {
+    font-size: 24px;
 }
 .media{
     color: rgba(245, 238, 240, 0.575);
@@ -196,7 +210,11 @@ p{
     pointer-events: none;
 }
 
-@media(max-width: 1360px){
+@media(max-width: 760px){
+    .nav-item {
+        text-align: center;
+        margin-bottom: 10px;
+    }
     h1{
         font-size: 38px;
     }
@@ -276,7 +294,9 @@ p{
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 768px) {
+
+    
     h1{
         font-size: 35px;
     }
@@ -313,4 +333,8 @@ p{
     .media{
         margin: auto 7px;
     }
+
+    .nav-item {
+        text-align: center;
+        margin-bottom: 10px;
 }
